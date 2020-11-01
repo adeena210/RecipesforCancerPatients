@@ -299,7 +299,7 @@ getrecipe(myArray, mealtype.toLowerCase());
 
     //In this block of code, we make two API requests which return the recipe's title, image, and source URL.
     $.ajax({
-      url: "https://api.spoonacular.com/recipes/complexSearch?apiKey=&number=16&includeIngredients=" + string+"&type="+type,
+      url: "https://api.spoonacular.com/recipes/complexSearch?apiKey=dcc071e29c6f4a50a1d0de302564fde4&number=16&includeIngredients=" + string+"&type="+type,
       success: function(res){
         var outputs=[];
         var arr_href=[];
@@ -315,7 +315,7 @@ getrecipe(myArray, mealtype.toLowerCase());
           document.getElementById("output"+num).innerHTML=out;
           $.ajax({
             url: "https://api.spoonacular.com/recipes/" + res.results[num].id + 
-            "/information?apiKey=",
+            "/information?apiKey=dcc071e29c6f4a50a1d0de302564fde4",
             success: function(res){
         
               url= "" + res.sourceUrl;
