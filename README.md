@@ -1,1 +1,5 @@
+---
+permalink: /newoutline.html
+---
 # RecipeforCancerPatients
+
